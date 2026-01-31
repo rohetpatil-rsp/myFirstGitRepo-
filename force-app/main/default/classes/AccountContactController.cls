@@ -6,7 +6,7 @@ public with sharing class AccountContactController {
             SELECT Id, Name,
                    (SELECT Id, Name, Email FROM Contacts)
             FROM Account
-            ORDER BY Name ASC   
+            ORDER BY Name DESC   
             LIMIT 20
         ];
     }
